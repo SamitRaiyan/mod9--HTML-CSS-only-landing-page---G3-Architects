@@ -15,6 +15,9 @@
   border: 0;
   cursor: pointer;
 }
+.text-light-gray {
+  color: #727272;
+}
 
 /* header styles */
 header {
@@ -55,65 +58,87 @@ nav li a {
   font-weight: 700;
   color: #131313;
 }
-.banner-description {
+.banner img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* main styles */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* teams styles */
+.teams-container {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.teams-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.teams-title {
+  font-size: 2.8rem;
+  padding: 2rem;
+}
+.title-p1 {
   color: #727272;
+  font-weight: 500;
 }
-.banner img{
-    width: 100%;
-    margin-top: 30px;
+.title-p2 {
+  color: #131313;
+  font-weight: 700;
 }
+.title-p3 {
+  color: #ff900e;
+  font-weight: 700;
+}
+.teams-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+
+
+
+
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
   header {
     padding: 10px 20px;
   }
-  nav{
+  nav, .teams-container {
     flex-direction: column;
   }
+  .team-img-container{
+    grid-template-columns: 1fr;
+  }
+  .teams-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .teams-title {
+    padding: .1rem;
+  }
 }
+
 /* tablet devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
     padding: 20px 50px;
   }
-  nav{
+  nav, .teams-container {
     flex-direction: column;
   }
-}
-
-/* main styles */
-main{
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-/* teams styles */
-.teams-container{
-  display: flex;
-  align-items: center;
-}
-.team-img-container{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 1.5rem;
-}
-.teams-content{
-  padding-left: 70px;
-  padding-right: 70px;
-}
-.teams-title{
-  font-size: 2.8rem;
-}
-.title-p1{
-  color: #727272;
-  font-weight: 500;
-}
-.title-p2{
-  color: #131313;
-  font-weight: 700;
-}
-.title-p3{
-  color: #FF900E;
-  font-weight: 700;
 }
