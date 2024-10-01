@@ -221,7 +221,8 @@ main {
     padding: 10px 20px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .features {
     flex-direction: column;
   }
   .team-img-container {
@@ -233,6 +234,14 @@ main {
   }
   .teams-title {
     padding: 0.1rem;
+  }
+  .feature-img img{
+    width: 100%;
+    margin-left: 0;
+  }
+  .badge{
+    position: static;
+    max-width: 200px;
   }
   .facts-card-container {
     flex-direction: column;
