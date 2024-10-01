@@ -108,9 +108,23 @@ main {
 }
 
 /* feature section styles */
-.features{
-  margin-top: 7rem;
+.features {
+  padding: 3rem;
+  margin-top: 5rem;
   display: flex;
+  gap: 5rem;
+}
+.feature-card {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-description {
+  margin-bottom: 2px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* facts section styles */
@@ -169,12 +183,9 @@ main {
   margin: 8rem;
   margin-top: 4rem;
 }
-.footer p{
+.footer p {
   padding: 1rem 5rem;
 }
-
-
-
 
 /* responsive media queries */
 /* mobile devices */
@@ -205,11 +216,11 @@ main {
     flex-direction: column;
     gap: 40px;
   }
-  .footer{
+  .footer {
     margin: 2rem;
   }
-  .footer p{
-    padding: .5rem 1.5rem;
+  .footer p {
+    padding: 0.5rem 1.5rem;
   }
 }
 
@@ -220,7 +231,7 @@ main {
   }
   nav,
   .teams-container,
-  .sponsors-image-container{
+  .sponsors-image-container {
     flex-direction: column;
   }
 }
