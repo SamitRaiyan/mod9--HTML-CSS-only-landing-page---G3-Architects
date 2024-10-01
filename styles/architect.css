@@ -130,6 +130,10 @@ main {
   font-size: 1rem;
   font-weight: 400;
 }
+.feature-img{
+  height: 90%;
+  margin-left: 3rem;
+}
 .badge {
   color: #FFF;
   border-radius: 8px;
