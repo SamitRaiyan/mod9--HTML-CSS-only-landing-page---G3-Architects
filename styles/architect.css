@@ -80,6 +80,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
+.team-img-container img{
+  box-shadow:  2px 2px 5px gray;
+}
 .teams-content {
   padding-left: 70px;
   padding-right: 70px;
